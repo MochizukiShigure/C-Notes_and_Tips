@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-int main(void) {
+int main() {
     int i;
     double sum, mean, deviation = 0, differ = 0, temp = 0;
     double num[5];

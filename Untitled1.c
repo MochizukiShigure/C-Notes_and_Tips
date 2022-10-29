@@ -14,11 +14,16 @@ int main() {
         num[i] = (double)(rand() % 800 + 200)/100; 
 		printf("%.2f ",  num[i]); 
 		sum += num[i];   
-		mean = sum / 5;
-		differ = pow((num[i] - mean), 2); 
-		temp = temp + differ; 
-	    deviation = sqrt((temp / 5));           
+		          
     }
+	mean = sum / 5;	
+	
+	 for(i = 0; i < 5; i++) 
+	{                
+        differ = pow(num[i] - mean, 2); 
+		temp = temp + differ;  
+    }
+	deviation = sqrt(temp / 5); 
 	printf("\nThe mean value is: %.2f\n", mean);
 	printf("The standard deviation is: %.2f\n", deviation);
     

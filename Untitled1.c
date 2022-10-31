@@ -1,3 +1,26 @@
+/*Exercise 3
+Write a C program that can perform the following:
+* Create 5 random real numbers between 2.0 and 10.0.
+* Display the 5 random real numbers rounded to 2 decimal places.
+* Calculate the following: Mean, Standard Deviation (expressions below).
+* Display the results of each calculation on the screen.
+* Calculate the maximal sum of 2 continuous numbers within the 5 random real numbers.
+* Display the maximal sum.
+Example:
+input is: no input
+output is:
+The random real numbers are: 2.46 3.57 8.19 5.56 6.34
+The mean value is: 5.22
+The standard deviation is: 2.27
+The maximal sum of 2 continuous numbers is: 13.75
+
+mean:
+X' = 1/N ∑n=1~N (Xn)
+
+standard deviation :
+σ = √[ 1/N( ∑n=1~N (Xn-X') ) ]
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
